@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="server.html" method="get">
+      <table border="1" width="1200px">
+        <colgroup>
+          <col width="150px" />
+          <col width="*" />
+          <col width="150px" />
+          <col width="*" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>교육과정</th>
+            <!-- prettier-ignore -->
+            <td>
+              <input type="radio" name="inquiry" id="inq01" >
+              <label for="inq01">교육문의</label>
+              <input type="radio" name="inquiry" id="inq02" >
+              <label for="inq02">인재요청</label>
+              <input type="radio" name="inquiry" id="inq03" >
+              <label for="inq03">기타</label>
+
+              <label><input type="radio" name="inq">교육문의</label>
+              <label><input type="radio" name="inq">교육문의</label>
+              <label><input type="radio" name="inq">교육문의</label>
+            </td>
+            <th>이름</th>
+            <td>
+              <input type="email" name="userName" placeholder="이메일을 입력하시오." required maxlength="" />
+            </td>
+          </tr>
+          <tr>
+            <th>과정명</th>
+            <td colspan="3">
+              <input type="password" name="userPw" value="" placeholder="비밀번호를 입력하세요." />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div><input type="checkbox" name="agree" value="1" />동의합니다.</div>
+      <button type="submit">전송</button>
+      <button type="reset">취소</button>
+      <button type="button">주소찾기</button>
+    </form>
+  </body>
+</html>

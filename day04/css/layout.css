@@ -1,0 +1,32 @@
+/* a  태그는 부모로부터 color 를 상속받지 않는다.  만약 부모태그의 color 속성을 적용하고자 한다면 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.txt-box {
+  font-size: 30px;
+  color: #d29703;
+}
+
+.txt-box div {
+  font-size: 16px;
+}
+.txt-box div h2 {
+  color: #ff0000;
+  font-size: 10vw;
+}
+
+#txt02 h2 {
+  /* font-family: "궁서"; */
+  /* 만약 똑같은 곳에 속성이 중복적용되면 id가 우선이다. */
+  color: #00cc44;
+}
+/* 20px 로 바꾸고 color #f00; */
+nav {
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+nav .active {
+  color: #f00;
+}

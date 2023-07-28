@@ -1,0 +1,37 @@
+/* inline vs block */
+/* css scss */
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap .box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gnb ul {
+  border: 1px solid #000;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  list-style: none;
+  flex-direction: row-reverse;
+}
+/* .gnb ul 안에 있는 a의 크기를 100px 높이를 100px로 하고 글자를 가운데 정렬하시오.  */
+.gnb ul li a {
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
