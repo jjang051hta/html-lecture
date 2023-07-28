@@ -10,7 +10,18 @@ a {
 .header {
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  transition: all 1s ease;
 }
+.header.on {
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 500px;
+}
+
 .header .logo {
   /* fixed 는 화면기준
     absolute는 컨텐츠 기준 */
@@ -38,8 +49,21 @@ a {
   /* border-width:1px;
   border-style:solid;
   border-color:#000; */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* pseudo selector */
+/* css 는 상위 선택자 없음... */
+.gnb ul li a:hover {
+  color: #000;
+}
+.gnb ul li a:active {
+  color: #f00;
+}
+
+.main-visual {
+  height: 100vh;
+  background-image: url("../images/main_visual_01.jpg");
 }

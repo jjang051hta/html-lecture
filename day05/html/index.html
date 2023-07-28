@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/layout.css" />
   </head>
   <body>
+    <!-- // dom -->
     <header class="header">
       <h1 class="logo">
         <a href="">회사로고</a>
@@ -35,5 +36,18 @@
         </ul>
       </nav>
     </header>
+    <div class="main-visual"></div>
+    <script>
+      //console.log("hello js");
+      //api
+      document.querySelector(".gnb").addEventListener("mouseenter", function () {
+        //alert("마우스 올라왔습니다.");
+        document.querySelector(".header").classList.add("on");
+      });
+      document.querySelector(".gnb").addEventListener("mouseleave", function () {
+        //alert("마우스 올라왔습니다.");
+        document.querySelector(".header").classList.remove("on");
+      });
+    </script>
   </body>
 </html>
